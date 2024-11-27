@@ -1,13 +1,13 @@
-import { REGEXP } from "../utilidades/constants"
-import { createUser } from "./register-model";
+import { REGEXP } from "../utilidades/constants.js"
+import { createUser } from "./register-model.js";
 
 export function registerController(form) {
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 
         const userNameElement = form.querySelector('#name-user');
-        const passwordElement = querySelector('#password');
-        const verifyPasswordElement = querySelector('#verify-password');
+        const passwordElement = form.querySelector('#password');
+        const verifyPasswordElement = form.querySelector('#verify-password');
         
         const userName = userNameElement.value;
         const password = passwordElement.value;

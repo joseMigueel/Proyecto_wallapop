@@ -1,13 +1,13 @@
 export async function loginUser(user, password) {
     
-    const reply = await fetch("http://127.0.0.1:8000/auth/login", {
+    const reply = await fetch("http://localhost:8000/auth/login", {
         method: "POST",
         body: JSON.stringify({
             userName: user,
             password
         }),
         headers: {
-            "Content-type": "aplication/json"
+            "Content-type": "application/json"
         }
     });
 

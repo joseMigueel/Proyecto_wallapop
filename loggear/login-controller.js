@@ -1,5 +1,5 @@
-import { REGEXP } from "../utilidades/constants";
-import { loginUser } from "./login-model";
+import { REGEXP } from "../utilidades/constants.js";
+import { loginUser } from "./login-model.js";
 
 export function loginController(loginForm) {
 
