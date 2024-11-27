@@ -34,7 +34,7 @@ async function manageUserRegister(userName, password) {
     
     try{
         await createUser(userName, password)
-        window.location.href = "/"
+        window.location.href = "/";
     } catch (error){
         alert(error.message)
     }

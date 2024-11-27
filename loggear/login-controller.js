@@ -1,5 +1,5 @@
 import { REGEXP } from "../utilidades/constants";
-
+import { loginUser } from "./login-model";
 
 export function loginController(loginForm) {
 
@@ -17,13 +17,13 @@ export function loginController(loginForm) {
         if (!userRegExp.test(userName)){
             alert('El formato que utiliza esta incorrecto')
         } else {
-            handleLoginUser(userName, password) 
+            manageUserRegister(userName, password) 
         }
     })
 
 }
 
-async function handleLoginUser(userName, password) {
+async function manageUserRegister(userName, password) {
     const token = await loginUser(userName, password);
 
     localStorage.setItem("jwt", token);
