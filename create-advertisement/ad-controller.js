@@ -1,4 +1,4 @@
-
+import { createAds } from "./ad-model.js";
 
 export function createAdsController(createAdsForm){
     createAdsForm.addEventListener("submit", (event) => {
