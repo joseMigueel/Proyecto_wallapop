@@ -4,7 +4,7 @@ export async function createAds(message) {
     const reply = await fetch("http://localhost:8000/api/anuncio", {
         method: "POST",
         body: JSON.stringify({
-            ...message
+        message
         }),
         headers: {
             "Content-type": "application/json",
