@@ -21,7 +21,7 @@ export function createAdsController(createAdsForm){
 
     async function manageAdsCreation(productName,adsDescription, productImage, productPrice, productType) {
         try {
-            await createAds(productName,adsDescription, productImage, productPrice, productType)
+            await createAds(productName, adsDescription, productImage, productPrice, productType)
             window.location.href = "/"
         } catch (error) {
             alert(error.message)

@@ -1,5 +1,5 @@
 import { isUserLoggedIn } from "../utilidades/auth.js";
-import { userAuthorizationProcess } from "./process-view.js";
+import { buildAdProcces, userAuthorizationProcess } from "./process-view.js";
 
 export function processController(processContainer) {
     if (isUserLoggedIn()){
@@ -10,6 +10,6 @@ export function processController(processContainer) {
             processController(processContainer)
         })
     } else {
-        processContainer.innerHTML = userAuthorizationProcess()
+        processContainer.innerHTML = buildAdProcces()
     }
 }

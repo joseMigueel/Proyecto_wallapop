@@ -7,7 +7,8 @@ export async function getAds() {
             throw new Error("Recurso no existente");
 
         }
-         return ads;
+        return ads;
+        
     } catch (error) {
         throw new Error(error.message)
     }
