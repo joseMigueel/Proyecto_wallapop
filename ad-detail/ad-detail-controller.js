@@ -1,5 +1,6 @@
-import { getCurrentUserInfo } from "../utilidades/auth-model";
-
+import { getCurrentUserInfo } from "../utilidades/auth-model.js";
+import { getAds, removeAds } from "./ad-detail-model.js";
+import { buildAdDetail, buildDeleteButton } from "./ad-detail-views.js";
 
 export async function adsDetailController(adsDetailContainer, adsId){
     try {

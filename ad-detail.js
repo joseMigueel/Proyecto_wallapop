@@ -1,4 +1,4 @@
-import { adsDetailController } from "./ad-detail/ad-detail-controller";
+import { adsDetailController } from "./ad-detail/ad-detail-controller.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const searchParam = new URLSearchParams(window.location.search);
