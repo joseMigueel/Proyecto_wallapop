@@ -1,8 +1,6 @@
 import { getAds } from "./ad-model.js";
 import { buildAd, builEmptyAdList } from "./ad-views.js";
 
-
-
 function drawAds (ads, adsContainer){
     if(!ads.length) {
         adsContainer.innerHTML = builEmptyAdList();
