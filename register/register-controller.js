@@ -17,7 +17,7 @@ export function registerController(form) {
 
         const userRegExp = new RegExp (REGEXP.user);
         if (!userRegExp.test(userName)){
-            errors.push('Formato del usuario incorrecto')
+            errors.push('Nombre del usuario incorrecto')
         }
 
         if (password !== verifyPassword){

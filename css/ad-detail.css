@@ -13,7 +13,7 @@
 }
 
 
-/* Estilo para las fechas y textos */
+
 .ad-detail span {
     display: block;
     font-size: 14px;
@@ -27,7 +27,7 @@
     text-decoration: none;
 }
 
-/* Estilo para el botón */
+
 .ad-detail-button {
     padding: 10px 20px;
     background-color: #dc3545;
