@@ -1,6 +1,6 @@
 import { getCurrentUserInfo } from "../utilidades/auth-model.js";
 import { getAds, removeAds } from "./ad-detail-model.js";
-import { buildAdDetail, buildDeleteButton } from "./ad-detail-views.js";
+import { buildAdDetail, buildDeleteButton, buildViewAllAdsButton } from "./ad-detail-views.js";
 
 export async function adsDetailController(adsDetailContainer, adsId){
     try {
@@ -8,6 +8,12 @@ export async function adsDetailController(adsDetailContainer, adsId){
         const user = await getCurrentUserInfo();
 
         adsDetailContainer.innerHTML = buildAdDetail(ad)
+        const viewAlladsButton = buildViewAllAdsButton();
+        adsDetailContainer.appendChild(viewAlladsButton)
+
+        viewAlladsButton.addEventListener('click', () => {
+            window.location.href = '/'
+        })
 
         if (user.id === ad.user.id){
             const removeButtonElement = buildDeleteButton();
