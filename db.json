@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "username": "jose@io.com",
+      "password": "$2b$10$6RqQ43Ua7GbOkU3MQyN3Mua.Oje1KO3hwVShL4hc.RVQ90yzm5fM.",
+      "id": 1
+    },
+    {
+      "username": "Jose",
+      "password": "$2b$10$6RqQ43Ua7GbOkU3MQyN3Mua.Oje1KO3hwVShL4hc.RVQ90yzm5fM.",
+      "id": 2
+    },
+    {
+      "username": "Jose1",
+      "password": "$2b$10$6RqQ43Ua7GbOkU3MQyN3Mua.Oje1KO3hwVShL4hc.RVQ90yzm5fM.",
+      "id": 3
+    },
+    {
+      "username": "Jose3",
+      "password": "$2b$10$u9tLc1vXWPgSp44bwmxE8.1izvB6YI85YXmNWBd0MJkKn34ajShOe",
+      "id": 4
+    },
+    {
+      "username": "pepe",
+      "password": "$2b$10$622QSPpD.5Ox2rr29NNKDuXjA91otcWLkbktQl5j6IdsOZKgJpjN6",
+      "id": 5
+    },
+    {
+      "username": "pedro",
+      "password": "$2b$10$622QSPpD.5Ox2rr29NNKDuXjA91otcWLkbktQl5j6IdsOZKgJpjN6",
+      "id": 6
+    }
+  ],
+  "anuncio": [
+    {
+      "productName": "pantalon",
+      "adsDescription": "nffnfn",
+      "productImage": "",
+      "productPrice": "12",
+      "productType": "buy",
+      "userId": 2,
+      "updatedAt": "2024-11-30T12:18:53.798Z",
+      "id": 3
+    },
+    {
+      "productName": "pantalon",
+      "adsDescription": "hbdh",
+      "productImage": "",
+      "productPrice": "12",
+      "productType": "buy",
+      "userId": 6,
+      "updatedAt": "2024-11-30T12:21:35.916Z",
+      "id": 4
+    }
+  ]
+}
