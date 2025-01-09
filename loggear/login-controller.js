@@ -21,22 +21,17 @@ export function loginController(loginForm) {
         const errors = [];
         const userRegExp = new RegExp(REGEXP.user);
 
-        // Validar formato del nombre de usuario
         if (!userRegExp.test(userName)) {
             errors.push('El nombre de usuario o correo electrónico no es válido');
         }
-
-        // Mostrar errores si los hay
         showErrors(errors, errorContainer);
 
-        // Si no hay errores, proceder con el login
         if (errors.length === 0) {
             try {
                 const token = await loginUser(userName, password);
                 localStorage.setItem("jwt", token);
                 window.location.href = "/";
             } catch (error) {
-                // Manejar errores de autenticación
                 showErrors([error.message], errorContainer);
             }
         }
@@ -44,9 +39,7 @@ export function loginController(loginForm) {
 }
 
 function showErrors(errors, errorContainer) {
-    // Limpiar errores previos
     errorContainer.innerHTML = "";
-
     if (errors.length > 0) {
         const errorList = document.createElement("ul");
         errors.forEach((error) => {

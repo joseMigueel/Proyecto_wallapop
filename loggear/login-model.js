@@ -12,7 +12,7 @@ export async function loginUser(user, password) {
     });
 
     if (!reply.ok) {
-        throw new Error("Error iniciando sesión");
+        throw new Error("La contraseña o usuario son incorrectos.");
     }
 
     const { accessToken } = await reply.json();
