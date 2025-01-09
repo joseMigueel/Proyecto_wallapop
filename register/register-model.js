@@ -11,6 +11,6 @@ export async function createUser(user, password){
     });
 
     if (!reply.ok) {
-        throw new Error("Error al crear el usuario")
+        throw new Error("Este usuario ya existe.")
     }
 }
